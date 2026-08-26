@@ -31,7 +31,7 @@ function App() {
     <div className="app-shell">
       <header className="topbar">
         <button className="brand" type="button" onClick={() => setPage('dashboard')} aria-label="Ir para o painel">
-          <span className="brand-mark"><i /><i /><i /><i /></span>
+          <img className="brand-mark" src={`${import.meta.env.BASE_URL}icons/icon-192-v2.png`} alt="" />
           <span><strong>Lotofácil</strong><small>análise estatística</small></span>
         </button>
         <nav className="desktop-nav" aria-label="Navegação principal">
@@ -57,7 +57,7 @@ function App() {
 }
 
 function LoadingScreen() {
-  return <main className="state-screen"><div className="state-logo"><span className="brand-mark"><i /><i /><i /><i /></span></div><div className="skeleton skeleton--title" /><div className="skeleton skeleton--copy" /><div className="skeleton skeleton--panel" /><p>Preparando as estatísticas…</p></main>
+  return <main className="state-screen"><div className="state-logo"><img className="brand-mark" src={`${import.meta.env.BASE_URL}icons/icon-192-v2.png`} alt="" /></div><div className="skeleton skeleton--title" /><div className="skeleton skeleton--copy" /><div className="skeleton skeleton--panel" /><p>Preparando as estatísticas…</p></main>
 }
 
 function ErrorScreen({ message }: { message: string }) {
