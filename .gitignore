@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+*.local
+public/data/results.json
+public/data/metadata.json
