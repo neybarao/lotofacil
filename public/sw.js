@@ -1,12 +1,12 @@
-const CACHE = 'lotofacil-v2'
+const CACHE = 'lotofacil-v3'
 const ROOT = '/lotofacil/'
 const CORE = [
   ROOT,
   `${ROOT}manifest.webmanifest`,
   `${ROOT}data/results.json`,
   `${ROOT}data/metadata.json`,
-  `${ROOT}icons/icon-192-v2.png`,
-  `${ROOT}icons/icon-512-v2.png`,
+  `${ROOT}icons/icon-192-v3.png`,
+  `${ROOT}icons/icon-512-v3.png`,
 ]
 
 self.addEventListener('install', (event) => {
