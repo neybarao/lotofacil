@@ -228,3 +228,10 @@ html { overscroll-behavior-y: none; }
 @keyframes refresh-spin { to { transform: rotate(360deg); } }
 @media (max-width: 700px) { .refresh-button { top: 76px; right: 12px; } .refresh-button span { display: none; } }
 @media (prefers-reduced-motion: reduce) { .refresh-indicator, .refresh-indicator svg { transition: none; } .is-refreshing svg { animation: none; } }
+
+.copy-button { width: 40px; min-height: 40px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--accent); display: grid; place-items: center; cursor: pointer; flex: 0 0 auto; }
+.copy-button:hover { background: var(--accent-soft); }
+.copy-button:active { transform: scale(.96); }
+.copy-error { color: var(--danger); font-size: 12px; margin: 0 0 12px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 700px) { .game-row__heading { gap: 8px; } .game-row__metrics { margin-left: auto; max-width: 150px; } }
