@@ -1,4 +1,4 @@
-const CACHE = 'lotofacil-v3'
+const CACHE = 'lotofacil-v4'
 const ROOT = '/lotofacil/'
 const CORE = [
   ROOT,
@@ -24,6 +24,11 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return
+
+  if (event.request.headers.get('X-App-Refresh') === 'true') {
+    event.respondWith(fetch(event.request, { cache: 'no-store' }))
+    return
+  }
 
   event.respondWith(
     fetch(event.request)

@@ -26,6 +26,7 @@ Depois da validação, o script gera `results.json` e `metadata.json`, usados pe
 - sequências e repetição em relação ao concurso anterior;
 - cinco jogos de 15 dezenas filtrados por critérios estatísticos;
 - teste retroativo sem usar o resultado do concurso analisado;
+- gesto de puxar para atualizar no topo da página e botão Atualizar para buscar a versão publicada mais recente;
 - instalação como PWA e funcionamento offline após o primeiro acesso.
 
 ## Atualizar os concursos
